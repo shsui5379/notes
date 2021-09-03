@@ -14,6 +14,9 @@
 
 ## Commits
 - `git add file`: stages the changes to `file` for commit
+- `git reset file`: undos add
+- `git remove file`: remove file
+- `git mv oldname newname`: rename the file oldname to newname
 - `git commit -m "notes"`: commits the staged changes, with a note message
 - Git stores snapshots, or commits, of your code
 - Commits are uniquely identified by a hash
@@ -29,5 +32,6 @@
 ## Remotes
 - Copy of the repository in another location (ex: on GitHub)
 - `git remote add name location`: adds a remote location called `name`, located at `location`
-- `git push -u remotename branchname`: pushes the local repository contents to the remote location
+- `git push`: pushes the local repository contents to the remote location
 - `git pull`: pulls repository content from remote location to local
+- `git clone repoaddress`: clones the repo locally, from repoaddress
