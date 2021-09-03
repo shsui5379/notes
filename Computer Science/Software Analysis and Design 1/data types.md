@@ -5,13 +5,21 @@
 - String literals are enclosed in " "
 - The nth character of a string can be retrieved using \[n\]
 - Strings can be concatenated using `+`
+- The `substr(start, length)` method returns a substring starting at character `start`, and has `length` characters
+  - `length` can be omitted to return the rest of the string starting from `start`
+
+# Character
+- `char`
+- A unicode character
 
 # Integers
-  - `int`
+- `int`
+- 32 bits
 
 # Doubles
 - `double`
 - Can store decimal values
+- 64 bits
 
 # Casting
 - If you do arithmetic operations, the resulting value uses the type of the two that uses the most memory
@@ -19,3 +27,11 @@
   - Operation with an int and a double results in a double
 - `(destination type) value` to cast `value` type to `destination type`
   - Newer way: `static_cast<destination type>(value)`
+
+# Auto
+- A variable declared with type auto gets its type based on initialization data
+
+# Constants
+- A constant variable can't change its value after initialization
+- To mark a variable as a constant, add the `const` keyword before the type
+- Named using CAPITAL_LETTERS
