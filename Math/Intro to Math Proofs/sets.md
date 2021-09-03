@@ -4,12 +4,18 @@
 - Ways to define a set
     - List
         - $S = \{1,2,3\}$
+        - Just listing all the elements out
     - Set builder notation
         - $S = \{ x | x > 0\}$
         - $|$ and $:$ means "such that"
+        - $\{ expression | condition \}$
     - Descriptive definition: using a sentence/paragraph to describe the elements of the set
     - Interval Notation
         - $[2, \infty)$
+        - Parenthesis means exclusive at the endpoint
+          - Infinity is always exclusive
+        - Square brackets mean inclusive at the endpoint
+        - $(start, end)$
 
 ## Important sets
 - Natural numbers: $N = \{1, 2, 3, 4, ...\}$
@@ -22,7 +28,9 @@
     - Even integers = $\{2x | x \in Z\}$
     - Odd integers = $\{ 2x + 1 | x \in Z\}$
 - $\emptyset$: empty set
-- Quotient of integers: $Q = \{\frac{p}{q} | p, q \in Z, q \not ={0}\}$
+- Quotient of integers (rational numbers): $Q = \{\frac{p}{q} | p, q \in Z, q \not ={0}\}$
+  - Repeating decimals are rational too
+    - If the repeating part is x digits long, divide the repeating part by a number with x number of 9's
 - Real numbers: $R$
 
 ## Cardinality
@@ -38,5 +46,5 @@
   - if $x \in A$, then $x \in B$
   - $\emptyset$ is a subset of every set
 - Powerset
-  - $P(A)$ is the powerset of $A$, which is a set containing all the subsets of $A$
+  - $P(A)$ is the powerset of $A$, which is a set containing all possible subsets of $A$
   - Theorem: $|P(S)| = 2^{|S|}$
