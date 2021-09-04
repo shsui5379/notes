@@ -11,6 +11,7 @@
 # Character
 - `char`
 - A unicode character
+- Character literals are in single quotes
 
 # Integers
 - `int`
