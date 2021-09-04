@@ -1,5 +1,6 @@
 # Strings
 - `std::string`
+- A sequence of characters
 - Has a `length()` method that returns the length of the string
   - `size()` does the same
 - String literals are enclosed in " "
@@ -31,6 +32,9 @@
 
 # Auto
 - A variable declared with type auto gets its type based on initialization data
+
+# Objects
+- Contains properties and methods
 
 # Constants
 - A constant variable can't change its value after initialization
