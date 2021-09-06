@@ -48,3 +48,4 @@
 - Powerset
   - $P(A)$ is the powerset of $A$, which is a set containing all possible subsets of $A$
   - Theorem: $|P(S)| = 2^{|S|}$
+    - Think binary, whether or not each individual element is part of a subset
