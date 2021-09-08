@@ -1,7 +1,7 @@
 # C++ basics
 
 ## Essentials
-- To compile, run `g++ -o output source.cpp`, which results in an executable named `output`
+- To build, run `g++ -o output source.cpp`, which results in an executable named `output`
     - if you don't define a output file name, the default name is `a.out`
 - End lines with semicolons
 - Single line comments start with `//`

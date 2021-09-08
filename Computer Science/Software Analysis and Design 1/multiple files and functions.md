@@ -7,7 +7,7 @@
 - The prototyping can be placed in header files
   - Functions from file `functs.cpp` would be prototyped in `functs.h`
   - `#include "functs.h"` would be on top of `functs.cpp` and any file that uses functions defined in `functs.cpp`
-- To compile
+- To build
   - First, all the files involved would need to be compiled into object files (ex: `functs.cpp` --> `functs.o`)
     - `g++ -c functs.cpp main.cpp another.cpp`
   - Then, link them to produce an executable
