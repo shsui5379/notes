@@ -48,6 +48,13 @@ for (int i = start; terminating condition; increment) {
     //code to run each iteration
 }
 ```
+- Do-while loop
+  - runs the code once, then check the condition for whether it can run again
+```c++
+do {
+    //code
+} while (condition);
+```
 
 
 ## Libraries
