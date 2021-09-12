@@ -14,3 +14,4 @@
 - To read a whole line, `getline(std::cin, variableToStoreLineTo)`
 - To read word, `std::cin >> variableToStoreWordIn`
   - Tip: to iterate through file contents, that returns `true` as long as there's new content to read, helpful in a while loop
+- The stdout of the program can also be redirected to a text file using `./program > file`
