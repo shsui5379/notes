@@ -20,6 +20,6 @@ target: dependencies
 
 
 ## How to get make to make things
-- Running `make` in the shell makes all the targets in the current directory's makefile
-  - If this is isn't the first time running `make` in the directory, make is smart enough to only remake the targets whose dependencies have been updated since the last make
+- Running `make` in the shell makes the first target in the current directory's makefile
+- If this is isn't the first time running `make` in the directory, make is smart enough to only remake the targets whose dependencies have been updated since the last make
 - To make a specific target `targetName`, run `make targetName`
