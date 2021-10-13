@@ -65,3 +65,12 @@
 - Post modernism society
   - Society isn't governed by history anymore
   - Pluralistic narrative, no "grand narrative"
+
+# Analysis
+- Microsociology: Human behavior in face-to-face interactions
+- Macrosociology: Human interaction in a large scale system
+
+# Why sociology?
+- Addresses cultural differences
+- Addresses effective policies
+- Self-enlightening
