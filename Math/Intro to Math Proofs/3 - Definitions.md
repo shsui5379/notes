@@ -1,0 +1,5 @@
+- If $n$ is an even integer, $\exists k \in Z, 2k = n$
+- If $n$ is an odd integer, $\exists k \in Z, 2k + 1 = n$
+- Suppose $a, b \in Z$.  If $a|b$, then $\exists k \in Z, k = b/a$
+  - $|$ meaning divides
+- $p$ is prime iff $p$ has only 2 positive factors
