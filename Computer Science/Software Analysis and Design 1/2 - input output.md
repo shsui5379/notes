@@ -2,6 +2,9 @@
 - cin can write to multiple variables at once
 - `cin >> first >> second >> third`
 - The user would type in what they want to store in `first`, then a space, then what they want to store in `second`, then a space, then what they want to store in `third`
+- When the input can't be stored into the variable (ex: wrong type), `std::cin fail()` would be true
+  - To be able to receive stdin again, do `std::cin clear()`
+- `std::cin << var` returns true if the value is successfully written to `var`
 
 # Manipulator
 - `#include <iomanip>`
