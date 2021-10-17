@@ -17,6 +17,7 @@ returnType functionName(type parameter) {
 - To call the function: `functionName(argument)`
 - When an executable is run, the `int main()` method runs first
     - `main` typically returns a `0`, which is the return code for success
+- By default, the parameter only receives the value of the argument.  If you want to be able to modify the variable passed in as argument, you need to pass in the reference to the variable.  To do so, add `&` to the end of the type for that parameter
 
 
 ## Variables
@@ -31,6 +32,26 @@ if (condition) {
     //code to run if condition2 is true
 } else {
 
+}
+
+//this is a ternary
+condition ? value to return if true : value to return if false;
+
+//this is a switch
+switch (int or char)
+{
+    case value1:
+        //code to run if value1 matches the provided int or char
+        break;
+    case value2:
+        //code to run if value2 matches the provided int or char
+        break;
+    case value3:
+        //code to run if value3 matches the provided int or char
+        break;
+    default:
+        //code to run if none of the above cases were run
+        break;
 }
 ```
 

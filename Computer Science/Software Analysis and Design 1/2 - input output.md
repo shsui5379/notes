@@ -18,3 +18,13 @@
 - To read word, `std::cin >> variableToStoreWordIn`
   - Tip: to iterate through file contents, that returns `true` as long as there's new content to read, helpful in a while loop
 - The stdout of the program can also be redirected to a text file using `./program > file`
+ 
+# Reading and writing to disk
+- Using the fstream library
+- Reading a file: `ifstream nameThisStream("path/to/file");`
+  - Use `>>` to get content out of the stream
+  - `nameThisStream.close()` to close the file
+  - `nameThisStream.fail()` to check if there was an error opening the file
+- For writing to a file, it's just like reading from a file, but
+  - use `ofstream` instead of `ifstream`
+  - and use `<<` to write to the stream

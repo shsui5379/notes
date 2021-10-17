@@ -8,6 +8,9 @@
 - Strings can be concatenated using `+`
 - The `substr(start, length)` method returns a substring starting at character `start`, and has `length` characters
   - `length` can be omitted to return the rest of the string starting from `start`
+- Strings can be compared for equality using `==`
+- Strings can be compared for which comes first lexicographical using `>` and `<`
+  - Greater means comes later (if equal length) or has more characters (if different lengths)
 
 # Character
 - `char`
