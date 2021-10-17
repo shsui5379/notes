@@ -1,0 +1,8 @@
+- Import ctime and cstdlib
+- First, use the current time as the seed for generating random numbers
+  - `srand(time(NULL));`
+- `rand()` returns a random integer between 0 and RAND_MAX
+- To compute a random integer in [lower, upper], use
+  - `rand() % (upper - lower + 1) + lower`
+- To compute a random double in [lower, upper], use
+  - `(double) rand() / RAND_MAX * (upper - lower) + lower`
