@@ -5,12 +5,14 @@
   - `size()` does the same
 - String literals are enclosed in " "
 - The nth character of a string can be retrieved using \[n\]
-- Strings can be concatenated using `+`
+- Strings and characters can be concatenated using `+`
 - The `substr(start, length)` method returns a substring starting at character `start`, and has `length` characters
   - `length` can be omitted to return the rest of the string starting from `start`
 - Strings can be compared for equality using `==`
 - Strings can be compared for which comes first lexicographical using `>` and `<`
   - Greater means comes later (if equal length) or has more characters (if different lengths)
+- `<string>.find("substring")` gets the index of "substring" in the string
+- Strings can also be constructed by `std::string varname("string literal")`
 
 # Character
 - `char`
@@ -25,6 +27,10 @@
 - `double`
 - Can store decimal values
 - 64 bits
+
+# size_t
+- An unsigned 64 bit integer
+- Used for stuff like the returns of sizeof and string.find()
 
 # Casting
 - If you do arithmetic operations, the resulting value uses the type of the two that uses the most memory
