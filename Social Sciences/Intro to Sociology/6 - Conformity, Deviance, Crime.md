@@ -1,0 +1,79 @@
+# Conformity, Deviance, Crime
+
+## Terminologies
+- Social deviants: people who refuses to follow the rules that the majority follows
+  - criminals
+  - May adhere to informal, strict codes of their own group
+- Norms: rules of conduct
+  - reflects the division of power and class, since it's established by whoever's in power
+- Deviance: actions that don't conform with the majority's norms
+  - Most people occasionally transgress generally accepted rules
+  - Can be perpetuated by an entity
+  - Doesn't have to harm anyone
+- There isn't a general consensus on crime vs. deviance
+- Sanction: reward or punishment that reinforces social expectations
+  - positive, negative, formal, informal
+  - formal: courts, police, prison
+    - laws: rules of behavior developed by political authority, backed by the government
+    - crime: breaking the laws
+
+## Theories
+- Definition of crime depends on culture, social institutions
+- People collectively determine what's deviant and what's criminal
+  - Those in power have more influence
+- Functionalism: crime and deviance is a result of structural tensions, lack of moral regulation in society.
+  - The aspirations of a group doesn't coincide with the rewards
+  - Emile Durkheim
+    - Anomie
+    - Crime and deviance are essential
+      - They bring new changes in an adaptive society
+      - Boundary maintenance
+      - Deviance to clarify norms
+      - Strengthen group solidarity
+  - Robert Merton
+    - Extension of anomie
+    - Deviance is a result of economic inequality
+    - relative deprivation
+    - Typology of deviance
+    - Subcultural expectation
+      - The lack of opportunities in the social system give opportunity for non-conformity to take over middle class
+- Symbolic interactionist theories
+  - How is deviance socially constructed?
+  - Why do some groups get labeled as deviant?
+  - Differential association
+    - Criminal behavior is learned from association with those that commit crimes
+    - More likely to be learned from primary social groups
+    - Contrasts with theories that psychological differences separate criminals from others
+  - Labeling theory
+    - Howard Becker (1963): those in power to impose the definition of morality does most of the labeling
+    - People become deviant in response to labels attached to them by political authority
+      - Primary deviation: action that caused the labeling
+      - Secondary deviation: actions done by the leveled people to be in accordance to their label
+- Conflict theory
+  - Draws on Marxist theory
+  - Deviance is deliberate, and often political
+  - Reject that laws are applied evenly
+  - Laws are instruments used by those in power to maintain order
+- Control theory
+  - People are controlled by certain types of relationships
+  - Crime is the outcome of an imbalance between impulses towards criminal activity and the controls that deter it
+  - Criminals take advantage of weakness in social and physical controls to maximize rewards
+  - Target hardening, zero-tolerance policies
+- Theory of broken windows
+  - Social disorder encourage more serious crimes
+  - Zimbardo study found problems with this study
+- Emile Durkheim: deviance is important for understanding shared standards
+  - The number of deviant offences a community recognizes remains stable over time
+  - Kai Erikson (1966) put that theory to the test, and found that a community's capacity to deal with deviance is related to the size of the aparatas it has for dealing with deviance
+- Many crimes are not reported
+  - Gender and crime
+    - chivalry thesis: women are less likely to be arrested than men
+    - difference in treatment of women in the criminal justice system
+  - Crimes committed by people in power
+    - white collar crimes 
+    - corporate crime
+  - cybercrime
+- private prisons
+  - the US has the highest per-capita incarceration rate
+  - private prisons provide monetary incentive to imprison people
+  - Government posting guaranteed occupancy rates
