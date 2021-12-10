@@ -77,3 +77,18 @@
   - the US has the highest per-capita incarceration rate
   - private prisons provide monetary incentive to imprison people
   - Government posting guaranteed occupancy rates
+
+## Thirteenth documentary
+- the US has the highest incarceration rate in the world
+- The 13th Amendment has loopholes, which enables slavery of criminals
+- Slavery was economical, so the South still had incentives to keep it going, and the 13th Amendment had loopholes...
+- Arresting blacks for minor crimes
+- Media portrayal of blacks as evil
+- Segregation, Jim Crow laws
+- Civil Rights Act, Voting Rights
+  - Crime rates coincidentally increased around the same time, leading to these movements being blamed
+  - War on crimes, war on drugs -- political brownie points
+- Blacks overrepresented as criminals in media portrayal
+- ALEC: lobbying group that allows corporations to use politicians to push bills
+  - Corrections Corp of America, which runs private prisons, were part of ALEC
+  - Prison Industrial Complex: facilities, resources in prisons are run by private companies
