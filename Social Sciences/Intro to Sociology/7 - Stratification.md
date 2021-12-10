@@ -52,3 +52,9 @@
 - Relative mobility: intergeneracional mobility - successive generations moving to another social class
 - Structural mobility: economy creates higher paying jobs
 - Exchange mobility: talent moves up
+
+## Steering
+- Real estate agents steering people into different neighborhoods based on race to perpetuate existing stratification
+- Giving contradicting information to different people
+- Loaded language
+- No proactive prevention
