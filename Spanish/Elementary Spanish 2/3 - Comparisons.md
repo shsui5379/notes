@@ -13,3 +13,4 @@
 - viejo -> mayor: old -> oldest
 - grande -> mayor: big -> biggest
 - pequeño -> menor: small -> smallest
+- An adjective can be converted into its superlative by appending the -ísimo ending
