@@ -27,8 +27,16 @@
   - usted fue
   - nosotros fuimos
   - ustedes fueron
-- poder: use pud- for the stem
-- tener: use tuv- for the stem
-- venir: use vin- for the stem
-- decir: use dij- for the stem
-- verbs that end in -cir should turn the c into a j
+- poder: use pud- for the stem with -ar preterite endings
+- tener: use tuv- for the stem with -ar preterite endings
+- venir: use vin- for the stem with -ar preterite endings
+- saber: use sup- for the stem with -ar preterite endings
+- poner: use pus- for the stem, with -ar preterite endings
+- estar: use estuv- for the stem with -ar preterite endings
+- hacer: use hic- for the stem with -ar preterite endings
+- querer: use quis- for the stem with -ar preterite endings
+- decir: use dij- for the stem with -ar preterite endings
+- traer: use traj- for the stem with -ar preterite endings
+- conducir: use conduj- for the stem with -ar preterite endings
+- traducir: use traduj- for the stem with -ar preterite endings
+- dar: use d- as the stem, and -ir preterite endings without accents
