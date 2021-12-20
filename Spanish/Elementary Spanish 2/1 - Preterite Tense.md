@@ -21,3 +21,9 @@
 - creer: usted: creyó, ustedes: creyeron
 - leer: usted: leyó, ustedes: leyeron
 - oir: usted: oyó, ustedes: oyeron
+- ser/ir: same
+  - yo fui
+  - tú fuiste
+  - usted fue
+  - nosotros fuimos
+  - ustedes fueron
