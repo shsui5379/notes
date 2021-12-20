@@ -1,0 +1,15 @@
+# Pronouns
+- Indicate to whom the action was done to
+- yo: me
+- tu: te
+- nosotros: nos
+- usted/es: se
+
+# Reflexive
+- when the do-er and the receive-er are the same
+- place in front of the conjugated verb
+- if the verb is infinitive, append to the end of the infinitive, no space
+
+# Verbs like gustar
+- distraer, aburrir, encantar, faltar, fascinar, importar
+- me gusta gatos: cats are likeable to me.  Me becomes the receiver of an action, being likeable, done by cats
