@@ -3,8 +3,25 @@
 - el amor: the love
 - el beso: the kiss
 - la sorpresa: the surprise
-  - sorprender: to surprise
+- sorprender: to surprise
 - el divorcio: the divorce
+- la pareja: the couple
+- brindar: to toast (a drink)
+- el invitado: the guest
+- regalar: to gift
+- divorciarse: to get divorced
+- enamorarse: to fall in love
+- romper: to break up
+- salir: to leave
+- separarse: to separate
+- la cita: the appointment/date
+- el estado civil: the civil status
+- la muerte: the death
+- casado: married
+- divorciado: divorced
+- separado: separated
+- soltero: single
+- viuda: widow
 - el/la recién casado(a): the newlywed
 - cambiar: to change
 - celebrar: to celebrate
