@@ -12,4 +12,4 @@
 
 # Verbs like gustar
 - distraer, aburrir, encantar, faltar, fascinar, importar
-- me gusta gatos: cats are likeable to me.  Me becomes the receiver of an action, being likeable, done by cats
+- me gustan gatos: cats are likeable to me.  Me becomes the receiver of an action, being likeable, done by cats
