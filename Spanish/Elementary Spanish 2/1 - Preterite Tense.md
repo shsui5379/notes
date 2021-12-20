@@ -27,3 +27,8 @@
   - usted fue
   - nosotros fuimos
   - ustedes fueron
+- poder: use pud- for the stem
+- tener: use tuv- for the stem
+- venir: use vin- for the stem
+- decir: use dij- for the stem
+- verbs that end in -cir should turn the c into a j
