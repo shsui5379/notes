@@ -19,3 +19,4 @@
 - first pronoun is to whom
 - second pronoun (lo, la, los, las) is for the subject being verb'ed
 - Ella me la da: she (ella) give (da) it (la) to me (me)
+- Infinitive: verb+firstpronoun+secondpronoun, no spaces: darmela
