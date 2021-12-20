@@ -1,0 +1,42 @@
+- la alegria: the happiness
+- la amistad: the friendship
+- el amor: the love
+- el beso: the kiss
+- la sorpresa: the surprise
+  - sorprender: to surprise
+- el divorcio: the divorce
+- el/la recién casado(a): the newlywed
+- cambiar: to change
+- celebrar: to celebrate
+- divertirse: to have fun
+- graduarse: to graduate
+- invitar: to invite
+- jubilarse: to retire
+  - retiro: the retirement
+- nacer: to be born
+  - nacimiento: the birth
+- odiar: to hate
+- pasarlo bien/mal: to have a good/bad time
+- reirse: to laugh
+  - la risa: the laugh
+- sonreir: to smile
+  - la sonrisa: the smile
+- juntos: together
+- felicidades: congrats
+- el pastel: the cake
+- la botella: the bottle
+- las galletas: the cookies
+- los postres: the desserts
+- los dulces: the candies
+- el flan: the flan
+- el champán: the champaign
+- caramelo: the caramel
+- el helado: the ice cream
+- chocolate: the chocolate
+- comprometerse: to get engaged
+- casarse: to get married
+- la niñez: the childhood
+- la adolescencia: the adolescence
+- la juventud: the youth
+- la madurez: the middle aged
+- la vejez: the old age
