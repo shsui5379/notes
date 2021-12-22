@@ -12,6 +12,7 @@ target: dependencies
 ```
   - That is a tab character where you see that indentation
   - The command itself will also be printed onto the console.  To make that not happen, prefix the command with `@`
+- `g++ -MM *.cpp *.h` command will print what your Makefile should include
 
 ## What make does
 - Make makes targets by running the command you provided
@@ -23,3 +24,11 @@ target: dependencies
 - Running `make` in the shell makes the first target in the current directory's makefile
 - If this is isn't the first time running `make` in the directory, make is smart enough to only remake the targets whose dependencies have been updated since the last make
 - To make a specific target `targetName`, run `make targetName`
+
+## Variables
+- To define: `VARNAME=value to store`
+- To get value: `$(VARNAME)`
+- Special variables
+  - CXXFLAGS: command line flags that will be automatically passed to the compiler
+  - CXX: the compiler
+  - LDFLAGS: flags for the linker
