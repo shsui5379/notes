@@ -30,5 +30,7 @@ target: dependencies
 - To get value: `$(VARNAME)`
 - Special variables
   - CXXFLAGS: command line flags that will be automatically passed to the compiler
+    - `-Wall -Wpendantic`: warn about unsafe operations
+    - `-On`: provide `n` level optimization
   - CXX: the compiler
   - LDFLAGS: flags for the linker
