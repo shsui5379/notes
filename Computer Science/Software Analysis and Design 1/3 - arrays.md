@@ -19,7 +19,7 @@
 - 14 digits
 - the `0x` at the beginning indicates that it's a hexadecimal number
 - Put `&` in front of a variable name to get the variable's memory address
-- `&arrayname[i] == arrayname + i`
+- `&arrayname[i] == *(arrayname + i)`
 - The array's name itself is a pointer to the first element of the array
 - When an array is passed in as an argument into a function, technically, the pointer is being passed in
   - Size info is lost
