@@ -28,3 +28,4 @@
 - Arrays containing arrays
 - To declare: `type arrName[numRows][numCols]`
 - To access an index: `arrName[row][col]`
+- To make each row have different number of columns, make an array of pointers, which point to different array rows
