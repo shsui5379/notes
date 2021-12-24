@@ -1,5 +1,6 @@
 # Declaring a class
 - class ClassName would be declared in a header file ClassName.h
+- cpp class names conventionally use CamelCase
 ```cpp
 //ClassName.h
 #pragma once
@@ -53,3 +54,4 @@ ClassName::~ClassName() {/*implement*/}
 - To use an instance, public members can be accessed through the dot operator
 - Passing big objects around to functions is inefficient.  Passing as a constant reference would be more efficient
   - `const type& paramName`
+- public static methods can be accessed outside the class through `ClassName::staticMethod()`
