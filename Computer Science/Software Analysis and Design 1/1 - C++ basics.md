@@ -17,7 +17,7 @@ returnType functionName(type parameter) {
 - To call the function: `functionName(argument)`
 - When an executable is run, the `int main()` method runs first
     - `main` typically returns a `0`, which is the return code for success
-- By default, the parameter only receives the value of the argument.  If you want to be able to modify the variable passed in as argument, you need to pass in the reference to the variable.  To do so, add `&` to the end of the type for that parameter
+- By default, the parameter only receives the value of the argument.  If you want to be able to modify the variable passed in as argument, you need to pass in the reference to the variable.  To do so, add `&` to the end of the type for that parameter.  Also useful for "returning" multiple values.
 
 
 ## Variables

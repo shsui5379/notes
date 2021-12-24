@@ -51,3 +51,5 @@ ClassName::~ClassName() {/*implement*/}
   - `ClassName instanceName` to use the default constructor
   - `ClassName instanceName(value1, value2)` to use a specific constructor
 - To use an instance, public members can be accessed through the dot operator
+- Passing big objects around to functions is inefficient.  Passing as a constant reference would be more efficient
+  - `const type& paramName`
