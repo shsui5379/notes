@@ -28,6 +28,9 @@
 - `git checkout name`: switch into the branch named `name`
 - `git merge name`: merges the branch named `name` to the current branch
     - Merge conflict: when a file has been modified in both branches, and git doesn't know know to safely merge those files without manual intervention.  Open up the file with the conflict, resolve the conflict, and commit the fixed version.
+- Deleting a branch: `git branch -d branchname`
+- `git push --set-upstream origin branchname` to push a local branch to remote
+- `git branch --set-upstream-to=origin/branchname branchname` to pull a remote branch to local
 
 ## Remotes
 - Copy of the repository in another location (ex: on GitHub)
