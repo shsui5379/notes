@@ -10,11 +10,11 @@ class ClassName
       ClassName(type param1, type param2); //constructor, for initiating an instance.  no return type
       ClassName(); //overloading is possible, for methods too
       type publicMethodOne(type param1, type param2);
-      type publicMethodTwo() const; //const means that this method won't modify any states.  compiler enforced
+      type publicMethodTwo() const; //const means that this method won't modify any states.  compiler enforced.  typically used for accessor methods
       type publicMethodThree() static; //static means that this method is not associated with any instance scope, and can only access the static scope
       ~ClassName(); //destructor, for tasks such as releasing dynamically allocated memory that this object used.  automatically called when an instance is no longer referencable
 
-   private: //state is usually kept private, as a principle of encapsulation.  accessible only in this class
+   private: //state is usually kept private, as a principle of encapsulation.  accessible only in this class.  use mutator and accessor methods
       type privateFieldOne;
       type privateFieldTwo static; //static means that this property is not associated with any specific instance; it's shared with the class
 }; //note the semicolon
