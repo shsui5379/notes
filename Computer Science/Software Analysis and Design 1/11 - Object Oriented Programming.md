@@ -16,3 +16,8 @@
 - The super-constructors can be called through constructor delegation
   - should be done, to initialize the super-states
 - Inheritance is considered brittle, since updates to one type would have implications to all the other types derived from it.  Using interfaces would be better, but a flaw with interfaces is that it makes the programmer speculate contexts that no one knows about
+
+# Polymorphism
+- Treating an instance of the subclass as an instance of the superclass, with possible differences in implementation
+- A SuperClass variable can store an instance of SubClass, and only SuperClass' members can be called from that variable (since SubClass has those members too, but SuperClass doesn't have what's specific to SubClass)
+- If a method is to be overridden in the subclass, then in the superclass' declaration of that method (but not the implementation), add `virtual` before the type.  That way, a superclass variable storing a subclass instance will call the overridden implementation of that function
