@@ -22,6 +22,10 @@ returnType functionName(type parameter) {
 
 ## Variables
 - `type name = value`
+- Static variables
+  - add `static` before the type
+  - Once declared, cpp won't redeclare it
+  - Any modifications to the variable remains even when it goes out of scope, until the program ends
 
 
 ## Conditionals
