@@ -14,9 +14,11 @@ class ClassName
       type publicMethodThree() static; //static means that this method is not associated with any instance scope, and can only access the static scope
       ~ClassName(); //destructor, for tasks such as releasing dynamically allocated memory that this object used.  automatically called when an instance is no longer referencable
 
+      type staticField static; //static means that this property is not associated with any specific instance; it's shared with the class
+
    private: //state is usually kept private, as a principle of encapsulation.  accessible only in this class.  use mutator and accessor methods
       type privateFieldOne;
-      type privateFieldTwo static; //static means that this property is not associated with any specific instance; it's shared with the class
+      type privateFieldTwo;
 }; //note the semicolon
 ```
 
@@ -43,6 +45,8 @@ type ClassName::publicMethodOne(type param1, type param2)
 type ClassName::publicMethodTwo() const {/*implement*/}
 type ClassName::publicMethodThree() {/*implement*/} //note the omission of `static` keyword in implementation
 ClassName::~ClassName() {/*implement*/}
+
+type ClassName::staticField = value; //to access a public static variable
 ```
 - `this` is a pointer to this instance
 
