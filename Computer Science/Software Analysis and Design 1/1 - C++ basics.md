@@ -76,6 +76,13 @@ do {
     //code
 } while (condition);
 ```
+- enhanced for loop
+```cpp
+for (type name : collection)
+{
+   //use `name` here
+}
+```
 
 
 ## Libraries
