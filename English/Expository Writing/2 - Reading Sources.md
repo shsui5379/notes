@@ -1,6 +1,7 @@
 - Know the source and its audience
   - Different rhetorics move different people
   - Think of the history behind a rhetoric
+  - Rhetorics distort reality
   - People of the same group are diverse.  There is no "general"
   - Don't be ableist
   - People are moved by emotions, not logic
