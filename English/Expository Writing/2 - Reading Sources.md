@@ -10,3 +10,8 @@
 - Go through the links in the article
 - Note the sources used by the source
 - Biases
+- Authors don't write in a vacuum; they're a purpose like they're responding or adding on to a conversation
+- Reword things you don't understand, but don't generalize
+- Things can have multiple conversations surrounding it
+- Authors don't always explicitly note when something isn't their own ideas
+- Understand the piece before critiquing it

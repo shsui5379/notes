@@ -4,3 +4,4 @@
 - Social media
 - Who is the author?  Why are they credible?
 - How can you know if something is true?
+- Note specific keywords
