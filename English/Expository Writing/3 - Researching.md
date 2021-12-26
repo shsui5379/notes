@@ -1,0 +1,6 @@
+- What groups are represented when you search something, and how can you find more representation?
+- What information and conversations are out there about the topic
+- Narrow the scope
+- Social media
+- Who is the author?  Why are they credible?
+- How can you know if something is true?
