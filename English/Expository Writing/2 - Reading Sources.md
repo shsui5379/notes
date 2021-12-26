@@ -1,0 +1,11 @@
+- Know the source and its audience
+  - Different rhetorics move different people
+  - Think of the history behind a rhetoric
+  - People of the same group are diverse.  There is no "general"
+  - Don't be ableist
+  - People are moved by emotions, not logic
+- Ask questions
+- Note the use of language
+- Go through the links in the article
+- Note the sources used by the source
+- Biases
