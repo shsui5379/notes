@@ -1,0 +1,12 @@
+- Generalizations and vagueness
+  - There's always something you don't know
+  - Notice the details, question things
+  - Understand the background as to why things happen
+  - Be specific in scope
+- Ideas prompt questions.  It's not about solving things, but moving things towards better
+  - Putting a puzzle together
+- Opinions are judgements.  Shuts down discussion
+  - Society influences what you believe.  changeable
+- No binary judgements.  Think about who, what, when, where, why, how, backgrounds, validity
+- Suspect your first response
+- Jot down snippets from inspiration
