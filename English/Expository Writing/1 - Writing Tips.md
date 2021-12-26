@@ -10,3 +10,4 @@
 - No binary judgements.  Think about who, what, when, where, why, how, backgrounds, validity
 - Suspect your first response
 - Jot down snippets from inspiration
+- Read your work out loud
