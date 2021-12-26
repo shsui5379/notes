@@ -1,6 +1,6 @@
 - Know the source and its audience
   - Different rhetorics move different people
-  - Think of the history behind a rhetoric
+  - Think of the history behind a rhetoric and the people
   - Rhetorics distort reality
   - People of the same group are diverse.  There is no "general"
   - Don't be ableist
@@ -10,7 +10,7 @@
 - Go through the links in the article
 - Note the sources used by the source
 - Biases
-- Authors don't write in a vacuum; they're a purpose like they're responding or adding on to a conversation
+- Authors don't write in a vacuum; they're a purpose like they're responding or adding on to a conversation.  Think of the purpose`
 - Reword things you don't understand, but don't generalize
 - Things can have multiple conversations surrounding it
 - Authors don't always explicitly note when something isn't their own ideas
