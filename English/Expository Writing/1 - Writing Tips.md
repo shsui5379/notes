@@ -19,3 +19,4 @@
 - Teacher is not an audience
 - Practice
 - Need ethos
+- Writing is a social act
