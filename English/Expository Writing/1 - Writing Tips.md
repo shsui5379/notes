@@ -18,5 +18,5 @@
 - Drafts will always be bad.  Revise.  There should be big changes
 - Teacher is not an audience
 - Practice
-- Need ethos
+- Ethos, pathos, logos
 - Writing is a social act

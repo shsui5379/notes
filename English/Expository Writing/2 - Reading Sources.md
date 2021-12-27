@@ -10,6 +10,7 @@
 - Go through the links in the article
 - Note the sources used by the source
 - Biases
+- What is the representation of the studies backing the piece
 - Authors don't write in a vacuum; they're a purpose like they're responding or adding on to a conversation.  Think of the purpose`
 - Reword things you don't understand, but don't generalize
 - Things can have multiple conversations surrounding it
