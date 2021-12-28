@@ -10,6 +10,7 @@
 - To inherit, `class SubClass : accessModifier SuperClass`
   - a `public` access modifier gives SubClass the public properties and public methods of SuperClass
     - SuperClass' private members can only be accessed by SubClass through SuperClass' public accessor methods
+    - Protected members are inherited too.  Protected members are like private members in that outsiders can't access it, but they're also like public members in that subclasses can access them
   - a `private` access modifier means that only the subclass' members can access the superclass' members
 - An inherited method can be overridden by defining a method that has the signature of the method to be overwritten
 - The super-implementation of a method can be called through `SuperClass::method()`
