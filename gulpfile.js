@@ -1,13 +1,10 @@
-const gulp = require('gulp');
-const gulpLoadPlugins = require('gulp-load-plugins');
+var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 
-const $ = gulpLoadPlugins();
-
-gulp.task('publish', () => {
-  console.log('Publish book (_book) to Github Pages');
-  return gulp.src('./_book/**/*')
-    .pipe($.ghPages({
-      origin: 'origin',
-      branch: 'gh-pages'
-    }));
+gulp.task('deploy', function () {
+  return gulp.src("./_book/**/*")
+    .pipe(deploy({
+      remoteUrl: "https://github.com/shsui5379/notes.git",
+      branch: "gh-pages"
+    }))
 });
