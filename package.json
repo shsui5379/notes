@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "honkit serve",
-    "publish": "node_modules/.bin/gulp publish"
+    "publish": "node_modules/.bin/gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "honkit": "^3.7.3"
   },
   "dependencies": {
-    "honkit-plugin-katex": "^1.1.7"
+    "honkit-plugin-katex": "^1.1.7",
+    "honkit-plugin-toggle-chapters": "^0.0.1"
   }
 }

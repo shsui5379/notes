@@ -2,7 +2,5 @@
    "structure": {
       "readme": "hello.md"
    },
-   "plugins": [
-      "katex"
-   ]
+   "plugins": ["katex", "toggle-chapters"]
 }
