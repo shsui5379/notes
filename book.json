@@ -1,0 +1,8 @@
+{
+   "structure": {
+      "readme": "hello.md"
+   },
+   "plugins": [
+      "katex"
+   ]
+}
