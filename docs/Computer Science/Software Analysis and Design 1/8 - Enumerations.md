@@ -1,0 +1,3 @@
+- Custom types defined by the programmer, where a name is associated with an int
+- ex: `enum Direction { NORTH = 0, SOUTH = 1, EAST = 2, WEST = 3 }`
+- NORTH is a Direction with the value of 0

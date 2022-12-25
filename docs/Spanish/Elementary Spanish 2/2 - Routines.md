@@ -1,0 +1,41 @@
+- el baño: the bathroom
+- el inodora: the toilet
+- el jabón: the soap
+- el despertador: the alarm clock
+- el maquillaje: the makeup
+- maquillarse: to makeup
+- la rutina diaria: the daily routine
+- hábitos: habits
+- bañarse: to bath
+- cepillarse: to brush
+  - el pelo: the hair
+  - los dientes: the teeth
+- la pasta de dientes: the toothpaste
+- dormirse: to sleep
+- lavarse: to wash
+  - la cara: the face
+  - las manos: the hands
+- levantarse: to get up
+- despertarse: to wake up
+- vestirse: to get dressed
+- el espejo: the mirror
+- el lavabo: the sink
+- ponerse: to put on
+- la crema de afeitar: the shaving cream
+- la ducha: the shower
+- ducharse: to shower
+- el champú: the shampoo
+- peinarse: to brush hair
+- acostarse: to go to bed
+- la toalla: the towel
+- las pantuflas: the slippers
+- antes: before
+- después: after
+- durante: during
+- entonces: then
+- luego: then
+- más tarde: later
+- por la noche: for the night
+- por la tarde: for the afternoon
+- por la mañana: for the morning
+- por último: finally

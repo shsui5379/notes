@@ -1,0 +1,10 @@
+- What groups are represented when you search something, and how can you find more representation?  What groups are part of the topic?
+- What information and conversations are out there about the topic
+- Narrow the scope
+- Social media
+- Who is the author?  Why are they credible?
+- How can you know if something is true?
+- Note specific keywords, not too abstract
+- Be aware of your own biases.  Avoid typecasting, researching for the narrative that you want to find
+- The truth is hard to find
+- Scholarly sources can be questionable

@@ -1,0 +1,5 @@
+- MLA parenthetical citation: (author last name, page number if applicable), before the period
+- Introduce the citation before including it, and don't make it read abrupt
+- Guide the reader through what you want them to do with that information before moving on
+- Have a works cited page
+- Be careful about conflating your ideas from the ideas you're citing

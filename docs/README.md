@@ -1,0 +1,3 @@
+- Math equations are KaTeX based. Can be rendered in places like VSCode's Markdown preview
+- The only pull requests that will be accepted are those that correct mistakes, make additions/modifications for clarity purpose, or similar
+- Archived collection: https://drive.google.com/drive/folders/18Y8gIuyliG7cjdmeHtaxrOCGKSfbJNSL

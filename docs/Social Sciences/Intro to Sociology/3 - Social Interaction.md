@@ -1,0 +1,44 @@
+# Social Interactions
+- The world as a stage
+  - Use of impression management to maintain:
+  - Roles
+  - Status, social position
+- Audience segregation
+  - Front stage: where the performance happens.  High stakes
+  - Back stage: our retreat.  Where we can truly be ourselves.
+  - Audience is segregated to avoid role conflict
+- Civil inattention
+  - Acknowledge another's presence without engaging with them
+  - Those that disrupt this disrupts social order
+- Face, gestures, emotions
+  - Nonverbal communication
+  - Body gestures, postures aren't culturally innate
+    - The smile is universal for happy, but culture only affects the width and duration of the smile
+  - Some facial expressions are used to convey information instead of emotions
+  - Paul Ekman's Facial Action Coding System
+- Unfocused Interactions
+  - Engaging in civil inattention
+- Focused Interactions
+  - expressions
+  - What the person gives: words and expressions the person used in a performance
+  - What the person gives off: clues that the audience perceives from the performance.  Used to examine the person for sincerity
+- Response cries
+  - Verbal utterances (uh, oops) that indicate that a mistake was minor, and that the person still has control over their performance
+  - Performance mode: monitoring and censoring performance
+- Social interactions are in terms of space and time
+
+# Theories
+- Study of daily life is important in sociology
+  - It teaches about social life and ourselves
+  - It shows how we use creativity to shape our reality
+  - It teaches about larger social systems
+- Erving Goffman
+  - Contributed a lot to microsociology (social interactions)
+  - Line: verbal and nonverbal patterns that one expresses in an interaction.  Once established, it is stuck, and changing it can lead to a loss of credibility
+  - Face: the values one takes on based on the line the person thinks they have
+  - Maintaining face: aligning self to line
+    - failure to maintain face causes discredibility, awkwardness, embarrassment, loss of confidence.  Stakes are high around people you see regularly
+  - Poise: ability to recover from getting loss of face
+  - To save face: to help someone recover from being loss of face
+  - Shameless: a person who intentionally makes someone lose face
+  - Defend your own face.  Protect others' face.  Avoid interactions where a face can be threatened.

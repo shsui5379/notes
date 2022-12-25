@@ -1,0 +1,493 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>C++ basics · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.7.5">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-toggle-chapters/toggle-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../Math/hello.html" />
+    
+    
+    <link rel="prev" href="hello.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../hello.html">
+            
+                <a href="../hello.html">
+            
+                    
+                    Computer Science
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="hello.html">
+            
+                <a href="hello.html">
+            
+                    
+                    Software Analysis and Design 1
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1" data-path="1 - C++ basics.html">
+            
+                <a href="1 - C++ basics.html">
+            
+                    
+                    C++ basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Math/hello.html">
+            
+                <a href="../../Math/hello.html">
+            
+                    
+                    Mathematics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Math/Intro To Math Proofs/hello.html">
+            
+                <a href="../../Math/Intro To Math Proofs/hello.html">
+            
+                    
+                    Intro to Math Proofs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../Math/Intro To Math Proofs/1 - sets.html">
+            
+                <a href="../../Math/Intro To Math Proofs/1 - sets.html">
+            
+                    
+                    Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >C++ basics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="c-basics">C++ basics</h1>
+<h2 id="essentials">Essentials</h2>
+<ul>
+<li>To build, run <code>g++ -o output source.cpp</code>, which results in an executable named <code>output</code><ul>
+<li>if you don&apos;t define a output file name, the default name is <code>a.out</code></li>
+</ul>
+</li>
+<li>End lines with semicolons</li>
+<li>Single line comments start with <code>//</code></li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>To define a function:<pre><code class="lang-c++"><span class="hljs-function">returnType <span class="hljs-title">functionName</span><span class="hljs-params">(type parameter)</span> </span>{
+  code;
+}
+</code></pre>
+</li>
+<li>To call the function: <code>functionName(argument)</code></li>
+<li>When an executable is run, the <code>int main()</code> method runs first<ul>
+<li><code>main</code> typically returns a <code>0</code>, which is the return code for success</li>
+</ul>
+</li>
+<li>By default, the parameter only receives the value of the argument.  If you want to be able to modify the variable passed in as argument, you need to pass in the reference to the variable.  To do so, add <code>&amp;</code> to the end of the type for that parameter.  Also useful for &quot;returning&quot; multiple values.</li>
+</ul>
+<h2 id="variables">Variables</h2>
+<ul>
+<li><code>type name = value</code></li>
+<li>Static variables<ul>
+<li>add <code>static</code> before the type</li>
+<li>Once declared, cpp won&apos;t redeclare it</li>
+<li>Any modifications to the variable remains even when it goes out of scope, until the program ends</li>
+</ul>
+</li>
+</ul>
+<h2 id="conditionals">Conditionals</h2>
+<pre><code class="lang-c++"><span class="hljs-keyword">if</span> (condition) {
+    <span class="hljs-comment">//code to run if condition is true</span>
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (condition2) {
+    <span class="hljs-comment">//code to run if condition2 is true</span>
+} <span class="hljs-keyword">else</span> {
+
+}
+
+<span class="hljs-comment">//this is a ternary</span>
+condition ? value to <span class="hljs-keyword">return</span> <span class="hljs-keyword">if</span> <span class="hljs-literal">true</span> : value to <span class="hljs-keyword">return</span> <span class="hljs-keyword">if</span> <span class="hljs-literal">false</span>;
+
+<span class="hljs-comment">//this is a switch</span>
+<span class="hljs-built_in"><span class="hljs-keyword">switch</span></span> (<span class="hljs-keyword">int</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">char</span>)
+{
+    <span class="hljs-keyword">case</span> value1:
+        <span class="hljs-comment">//code to run if value1 matches the provided int or char</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> value2:
+        <span class="hljs-comment">//code to run if value2 matches the provided int or char</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> value3:
+        <span class="hljs-comment">//code to run if value3 matches the provided int or char</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-comment">//code to run if none of the above cases were run</span>
+        <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<h2 id="loops">Loops</h2>
+<ul>
+<li>While loop<pre><code class="lang-c++"><span class="hljs-keyword">while</span> (condition) {
+  <span class="hljs-comment">//code to run while condition is true</span>
+}
+</code></pre>
+</li>
+<li>For i loop<pre><code class="lang-c++"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = start; terminating condition; increment) {
+  <span class="hljs-comment">//code to run each iteration</span>
+}
+</code></pre>
+</li>
+<li>Do-while loop<ul>
+<li>runs the code once, then check the condition for whether it can run again<pre><code class="lang-c++"><span class="hljs-keyword">do</span> {
+<span class="hljs-comment">//code</span>
+} <span class="hljs-keyword">while</span> (condition);
+</code></pre>
+</li>
+</ul>
+</li>
+<li>enhanced for loop<pre><code class="lang-cpp"><span class="hljs-keyword">for</span> (type name : collection)
+{
+ <span class="hljs-comment">//use `name` here</span>
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="libraries">Libraries</h2>
+<ul>
+<li>To import a library, at the start of the source file, add <code>#include libraryName</code><ul>
+<li>Enclose <code>libraryName</code> in angle brackets if system library.  Quotes for your own library.<h3 id="iostream-library">iostream library</h3>
+</li>
+</ul>
+</li>
+<li><code>std::cout</code>: sends whatever gets streamed into it to console output<ul>
+<li>Ex: <code>std::cout &lt;&lt; &quot;Hello&quot;</code></li>
+</ul>
+</li>
+<li><code>std::endl</code>: represents an end line character (\n)<ul>
+<li><code>std::cout &lt;&lt; &quot;Hello World&quot; &lt;&lt; &quot;!&quot; &lt;&lt; std::endl;</code></li>
+</ul>
+</li>
+<li><code>std::cin</code>: streams out the input from console<ul>
+<li><code>std::cin &gt;&gt; variable</code></li>
+</ul>
+</li>
+<li><code>&gt;&gt;</code> and <code>&lt;&lt;</code> are stream insertion operators. They take a stream and pass it to whatever the angle is pointing to</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hello.html" class="navigation navigation-prev " aria-label="Previous page: Software Analysis and Design 1">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../Math/hello.html" class="navigation navigation-next " aria-label="Next page: Mathematics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"C++ basics","level":"1.2.1.1","depth":3,"next":{"title":"Mathematics","level":"1.3","depth":1,"path":"Math/hello.md","ref":"Math/hello.md","articles":[{"title":"Intro to Math Proofs","level":"1.3.1","depth":2,"path":"Math/Intro To Math Proofs/hello.md","ref":"Math/Intro To Math Proofs/hello.md","articles":[{"title":"Sets","level":"1.3.1.1","depth":3,"path":"Math/Intro To Math Proofs/1 - sets.md","ref":"Math/Intro To Math Proofs/1 - sets.md","articles":[]}]}]},"previous":{"title":"Software Analysis and Design 1","level":"1.2.1","depth":2,"path":"Computer Science/Software Analysis and Design 1/hello.md","ref":"Computer Science/Software Analysis and Design 1/hello.md","articles":[{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","toggle-chapters"],"pluginsConfig":{"katex":{},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"hello.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","mtime":"2022-12-25T06:03:20.115Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-12-25T06:05:56.335Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-toggle-chapters/toggle-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,12 @@
+- amarillo: yellow
+- anaranjado: orange
+- azul: blue
+- blanco: white
+- gris: grey
+- marrón: brown
+  - café: brown
+- morado: purple
+- negro: black
+- rojo: red
+- rosado: pink
+- verde: green

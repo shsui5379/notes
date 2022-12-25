@@ -1,0 +1,14 @@
+- Allocating memory in run time
+- Variables using statically allocated memory are stored in the stack
+- Variables in the stack are deleted from memory once it goes out of scope
+- Dynamically allocated memory is stored in the heap
+- To request memory in the heap: `new type[count]`
+  - Memory for `count` number of elements of type `type` are allocated sequentially (like an array)
+  - Then, a pointer to the first element gets returned
+  - the `[count]` can be omitted if just one
+  - This is how you can kinda pass arrays around as return values
+- Since dynamically allocated memory won't be automatically freed once the function goes out of scope (most OS wait for the program to terminate first), the programmer must manually release any heap memory that's no longer needed
+  - `delete[count] pointerName`
+  - `[count]` can be omitted if just one
+  - Failure to free the memory is called a memory leak.  Delete every new
+  - Don't forget about the dangling pointer
