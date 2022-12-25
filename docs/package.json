@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/shsui5379/notes#readme",
   "devDependencies": {
-    "honkit": "^3.7.3"
+    "honkit": "^4.0.4"
   },
   "dependencies": {
     "honkit-plugin-katex": "^1.1.7",
