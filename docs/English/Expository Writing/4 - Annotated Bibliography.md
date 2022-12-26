@@ -1,3 +1,0 @@
-- Shows the resources you consulted in your research, to show your expertise
-- Written in your own words
-- Evaluate sources: expertise, biases, when, context, data used
