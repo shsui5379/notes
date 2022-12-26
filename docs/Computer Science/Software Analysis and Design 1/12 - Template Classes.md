@@ -1,9 +1,0 @@
-- This is like how the vector class can handle being a vector of any generic type of data, as long as you provided the type in the `<>`
-- At the top of the class header, add `template <class T>`
-  - `T` is now a data type that represents a generic data type
-  - At the bottom, `#include "ClassName.cxx"`
-    - Since the actual implementation source is included in the header now, don't compile the *.o file
-- In the class implementation, we would use the `cxx` extension instead of `cpp`
-  - Also include `template <class T>`
-  - The namespace would be `ClassName<T>::`
-- Now when you create an instance of the class, for the data type, use `ClassName<type>`, for `T` to represent `type`

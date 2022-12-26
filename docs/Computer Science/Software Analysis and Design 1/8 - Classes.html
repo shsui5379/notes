@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Software Analysis and Design 1 · HonKit</title>
+        <title>Classes · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -64,10 +64,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1 - C++ basics.html" />
+    <link rel="next" href="8 - Enumerations.html" />
     
     
-    <link rel="prev" href="../hello.html" />
+    <link rel="prev" href="7 - Dynamically Allocated Memory.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="hello.html">
+        <li class="chapter " data-level="1.2.1" data-path="hello.html">
             
                 <a href="hello.html">
             
@@ -319,7 +319,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.15" data-path="8 - Classes.html">
+        <li class="chapter active" data-level="1.2.1.15" data-path="8 - Classes.html">
             
                 <a href="8 - Classes.html">
             
@@ -514,7 +514,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Software Analysis and Design 1</a>
+        <a href="../.." >Classes</a>
     </h1>
 </div>
 
@@ -529,7 +529,77 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>C++ Programming</p>
+                                <h1 id="declaring-a-class">Declaring a class</h1>
+<ul>
+<li>class ClassName would be declared in a header file ClassName.h</li>
+<li><p>cpp class names conventionally use CamelCase</p>
+<pre><code class="lang-cpp"><span class="hljs-comment">//ClassName.h</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">pragma</span> once</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>
+{</span>
+ <span class="hljs-keyword">public</span>: <span class="hljs-comment">//accessible outside of this class</span>
+    <span class="hljs-built_in">ClassName</span>(type param1, type param2); <span class="hljs-comment">//constructor, for initiating an instance.  no return type</span>
+    <span class="hljs-built_in">ClassName</span>(); <span class="hljs-comment">//overloading is possible, for methods too</span>
+    <span class="hljs-function">type <span class="hljs-title">publicMethodOne</span><span class="hljs-params">(type param1, type param2)</span></span>;
+    <span class="hljs-function">type <span class="hljs-title">publicMethodTwo</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span></span>; <span class="hljs-comment">//const means that this method won&apos;t modify any states.  compiler enforced.  typically used for accessor methods</span>
+    <span class="hljs-function">type <span class="hljs-title">publicMethodThree</span><span class="hljs-params">()</span> <span class="hljs-keyword">static</span></span>; <span class="hljs-comment">//static means that this method is not associated with any instance scope, and can only access the static scope</span>
+    ~<span class="hljs-built_in">ClassName</span>(); <span class="hljs-comment">//destructor, for tasks such as releasing dynamically allocated memory that this object used.  automatically called when an instance is no longer referencable</span>
+
+    type staticField <span class="hljs-keyword">static</span>; <span class="hljs-comment">//static means that this property is not associated with any specific instance; it&apos;s shared with the class</span>
+
+ <span class="hljs-keyword">private</span>: <span class="hljs-comment">//state is usually kept private, as a principle of encapsulation.  accessible only in this class.  use mutator and accessor methods</span>
+    type privateFieldOne;
+    type privateFieldTwo;
+}; <span class="hljs-comment">//note the semicolon</span>
+</code></pre>
+</li>
+</ul>
+<h1 id="implementing-a-class">Implementing a class</h1>
+<ul>
+<li>The methods of a class would be implemented in ClassName.cpp
+```cpp
+//ClassName.cpp<h1 id="include-classnameh-include-the-header">include &quot;ClassName.h&quot; //include the header</h1>
+</li>
+</ul>
+<p>//signature is the same as what&apos;s found in the header, but with ClassName:: namespace
+ClassName::ClassName(type param1, type param2)
+{
+   //implement the constructor
+}</p>
+<p>//constructor delegation: when there&apos;s constructor overloading, one constructor can call another constructor
+ClassName::ClassName() : ClassName(value1, value2) {}</p>
+<p>type ClassName::publicMethodOne(type param1, type param2)
+{
+   //implement method
+}</p>
+<p>type ClassName::publicMethodTwo() const {/<em>implement</em>/}
+type ClassName::publicMethodThree() {/<em>implement</em>/} //note the omission of <code>static</code> keyword in implementation
+ClassName::~ClassName() {/<em>implement</em>/}</p>
+<p>type ClassName::staticField = value; //to access a public static variable
+```</p>
+<ul>
+<li><code>this</code> is a pointer to this instance</li>
+</ul>
+<h1 id="instancesobjects">Instances/objects</h1>
+<ul>
+<li>include the header in the files that need that class</li>
+<li>To initialize an instance<ul>
+<li><code>ClassName instanceName</code> to use the default constructor</li>
+<li><code>ClassName instanceName(value1, value2)</code> to use a specific constructor</li>
+<li>Dynamically allocated memory<ul>
+<li><code>ClassName* pointerToInstance = new ClassName</code> to use default constructor</li>
+<li><code>ClassName* pointerToInstance = new ClassName(value1, value2)</code> to use a specific constructor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>To use an instance, public members can be accessed through the dot operator</li>
+<li>Passing big objects around to functions is inefficient.  Passing as a constant reference would be more efficient<ul>
+<li><code>const type&amp; paramName</code></li>
+</ul>
+</li>
+<li>public static methods can be accessed outside the class through <code>ClassName::staticMethod()</code></li>
+</ul>
 
                                 
                                 </section>
@@ -557,12 +627,12 @@
 
             
                 
-                <a href="../hello.html" class="navigation navigation-prev " aria-label="Previous page: Computer Science">
+                <a href="7 - Dynamically Allocated Memory.html" class="navigation navigation-prev " aria-label="Previous page: Dynamically allocated memory">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1 - C++ basics.html" class="navigation navigation-next " aria-label="Next page: C++ basics">
+                <a href="8 - Enumerations.html" class="navigation navigation-next " aria-label="Next page: Enumerations">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -573,7 +643,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Software Analysis and Design 1","level":"1.2.1","depth":2,"next":{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},"previous":{"title":"Computer Science","level":"1.2","depth":1,"path":"Computer Science/hello.md","ref":"Computer Science/hello.md","articles":[{"title":"Software Analysis and Design 1","level":"1.2.1","depth":2,"path":"Computer Science/Software Analysis and Design 1/hello.md","ref":"Computer Science/Software Analysis and Design 1/hello.md","articles":[{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},{"title":"Git","level":"1.2.1.2","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Git.md","ref":"Computer Science/Software Analysis and Design 1/1 - Git.md","articles":[]},{"title":"Linux","level":"1.2.1.3","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Linux.md","ref":"Computer Science/Software Analysis and Design 1/1 - Linux.md","articles":[]},{"title":"Arithmetics","level":"1.2.1.4","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","ref":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","articles":[]},{"title":"Data types","level":"1.2.1.5","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - data types.md","ref":"Computer Science/Software Analysis and Design 1/2 - data types.md","articles":[]},{"title":"Input/output","level":"1.2.1.6","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - input output.md","ref":"Computer Science/Software Analysis and Design 1/2 - input output.md","articles":[]},{"title":"Arrays","level":"1.2.1.7","depth":3,"path":"Computer Science/Software Analysis and Design 1/3 - arrays.md","ref":"Computer Science/Software Analysis and Design 1/3 - arrays.md","articles":[]},{"title":"Build systems","level":"1.2.1.8","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - build systems.md","ref":"Computer Science/Software Analysis and Design 1/4 - build systems.md","articles":[]},{"title":"Multiple files","level":"1.2.1.9","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","ref":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","articles":[]},{"title":"Input validation","level":"1.2.1.10","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","ref":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","articles":[]},{"title":"Random number generation","level":"1.2.1.11","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","ref":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","articles":[]},{"title":"Test driven development","level":"1.2.1.12","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","ref":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","articles":[]},{"title":"Pointers","level":"1.2.1.13","depth":3,"path":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","ref":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","articles":[]},{"title":"Dynamically allocated memory","level":"1.2.1.14","depth":3,"path":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","ref":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","articles":[]},{"title":"Classes","level":"1.2.1.15","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Classes.md","ref":"Computer Science/Software Analysis and Design 1/8 - Classes.md","articles":[]},{"title":"Enumerations","level":"1.2.1.16","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","ref":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","articles":[]},{"title":"Structs","level":"1.2.1.17","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Structs.md","ref":"Computer Science/Software Analysis and Design 1/8 - Structs.md","articles":[]},{"title":"Debugger","level":"1.2.1.18","depth":3,"path":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","ref":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","articles":[]},{"title":"Vectors","level":"1.2.1.19","depth":3,"path":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","ref":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","articles":[]},{"title":"Object oriented programming","level":"1.2.1.20","depth":3,"path":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","ref":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","articles":[]},{"title":"Template classes","level":"1.2.1.21","depth":3,"path":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","ref":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","articles":[]},{"title":"Operator overloading","level":"1.2.1.22","depth":3,"path":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","ref":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","articles":[]}]}]},"articles":[{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},{"title":"Git","level":"1.2.1.2","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Git.md","ref":"Computer Science/Software Analysis and Design 1/1 - Git.md","articles":[]},{"title":"Linux","level":"1.2.1.3","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Linux.md","ref":"Computer Science/Software Analysis and Design 1/1 - Linux.md","articles":[]},{"title":"Arithmetics","level":"1.2.1.4","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","ref":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","articles":[]},{"title":"Data types","level":"1.2.1.5","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - data types.md","ref":"Computer Science/Software Analysis and Design 1/2 - data types.md","articles":[]},{"title":"Input/output","level":"1.2.1.6","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - input output.md","ref":"Computer Science/Software Analysis and Design 1/2 - input output.md","articles":[]},{"title":"Arrays","level":"1.2.1.7","depth":3,"path":"Computer Science/Software Analysis and Design 1/3 - arrays.md","ref":"Computer Science/Software Analysis and Design 1/3 - arrays.md","articles":[]},{"title":"Build systems","level":"1.2.1.8","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - build systems.md","ref":"Computer Science/Software Analysis and Design 1/4 - build systems.md","articles":[]},{"title":"Multiple files","level":"1.2.1.9","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","ref":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","articles":[]},{"title":"Input validation","level":"1.2.1.10","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","ref":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","articles":[]},{"title":"Random number generation","level":"1.2.1.11","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","ref":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","articles":[]},{"title":"Test driven development","level":"1.2.1.12","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","ref":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","articles":[]},{"title":"Pointers","level":"1.2.1.13","depth":3,"path":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","ref":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","articles":[]},{"title":"Dynamically allocated memory","level":"1.2.1.14","depth":3,"path":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","ref":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","articles":[]},{"title":"Classes","level":"1.2.1.15","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Classes.md","ref":"Computer Science/Software Analysis and Design 1/8 - Classes.md","articles":[]},{"title":"Enumerations","level":"1.2.1.16","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","ref":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","articles":[]},{"title":"Structs","level":"1.2.1.17","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Structs.md","ref":"Computer Science/Software Analysis and Design 1/8 - Structs.md","articles":[]},{"title":"Debugger","level":"1.2.1.18","depth":3,"path":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","ref":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","articles":[]},{"title":"Vectors","level":"1.2.1.19","depth":3,"path":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","ref":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","articles":[]},{"title":"Object oriented programming","level":"1.2.1.20","depth":3,"path":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","ref":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","articles":[]},{"title":"Template classes","level":"1.2.1.21","depth":3,"path":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","ref":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","articles":[]},{"title":"Operator overloading","level":"1.2.1.22","depth":3,"path":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","ref":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","toggle-chapters","livereload"],"pluginsConfig":{"katex":{},"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"hello.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Computer Science/Software Analysis and Design 1/hello.md","mtime":"2022-08-23T04:59:06.211Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-12-26T05:01:15.136Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Classes","level":"1.2.1.15","depth":3,"next":{"title":"Enumerations","level":"1.2.1.16","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","ref":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","articles":[]},"previous":{"title":"Dynamically allocated memory","level":"1.2.1.14","depth":3,"path":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","ref":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","toggle-chapters","livereload"],"pluginsConfig":{"katex":{},"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"hello.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Computer Science/Software Analysis and Design 1/8 - Classes.md","mtime":"2022-08-23T04:59:06.211Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-12-26T05:01:15.136Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

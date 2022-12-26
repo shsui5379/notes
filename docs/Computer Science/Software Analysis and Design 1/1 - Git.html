@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Software Analysis and Design 1 · HonKit</title>
+        <title>Git · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -64,10 +64,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1 - C++ basics.html" />
+    <link rel="next" href="1 - Linux.html" />
     
     
-    <link rel="prev" href="../hello.html" />
+    <link rel="prev" href="1 - C++ basics.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="hello.html">
+        <li class="chapter " data-level="1.2.1" data-path="hello.html">
             
                 <a href="hello.html">
             
@@ -150,7 +150,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.2" data-path="1 - Git.html">
+        <li class="chapter active" data-level="1.2.1.2" data-path="1 - Git.html">
             
                 <a href="1 - Git.html">
             
@@ -514,7 +514,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Software Analysis and Design 1</a>
+        <a href="../.." >Git</a>
     </h1>
 </div>
 
@@ -529,7 +529,57 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>C++ Programming</p>
+                                <h1 id="git">Git</h1>
+<h2 id="concept">Concept</h2>
+<ul>
+<li>Git is a version control system</li>
+<li>Stores different versions of the codebase</li>
+<li>Usages<ul>
+<li>Disaster recovery</li>
+<li>Collaboration</li>
+</ul>
+</li>
+<li>Forks are like branches, but it&apos;s a whole new repository<ul>
+<li>Downstream refers to the forks, while upstream refers to the forks&apos; parents</li>
+</ul>
+</li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<ul>
+<li><code>git init</code>: initializes a repository in the current directory</li>
+</ul>
+<h2 id="commits">Commits</h2>
+<ul>
+<li><code>git add file</code>: stages the changes to <code>file</code> for commit</li>
+<li><code>git reset file</code>: undos add</li>
+<li><code>git remove file</code>: remove file</li>
+<li><code>git mv oldname newname</code>: rename the file oldname to newname</li>
+<li><code>git commit -m &quot;notes&quot;</code>: commits the staged changes, with a note message</li>
+<li>Git stores snapshots, or commits, of your code</li>
+<li>Commits are uniquely identified by a hash</li>
+<li>Each commit stores pointers to its parent commits</li>
+</ul>
+<h2 id="branches">Branches</h2>
+<ul>
+<li>Creating another branch of the codebase so you don&apos;t affect the existing code</li>
+<li><code>git branch name</code>: create a new branch from the current branch, and call it <code>name</code></li>
+<li><code>git checkout name</code>: switch into the branch named <code>name</code></li>
+<li><code>git merge name</code>: merges the branch named <code>name</code> to the current branch<ul>
+<li>Merge conflict: when a file has been modified in both branches, and git doesn&apos;t know know to safely merge those files without manual intervention.  Open up the file with the conflict, resolve the conflict, and commit the fixed version.</li>
+</ul>
+</li>
+<li>Deleting a branch: <code>git branch -d branchname</code></li>
+<li><code>git push --set-upstream origin branchname</code> to push a local branch to remote</li>
+<li><code>git branch --set-upstream-to=origin/branchname branchname</code> to pull a remote branch to local</li>
+</ul>
+<h2 id="remotes">Remotes</h2>
+<ul>
+<li>Copy of the repository in another location (ex: on GitHub)</li>
+<li><code>git remote add name location</code>: adds a remote location called <code>name</code>, located at <code>location</code></li>
+<li><code>git push</code>: pushes the local repository contents to the remote location</li>
+<li><code>git pull</code>: pulls repository content from remote location to local</li>
+<li><code>git clone repoaddress</code>: clones the repo locally, from repoaddress</li>
+</ul>
 
                                 
                                 </section>
@@ -557,12 +607,12 @@
 
             
                 
-                <a href="../hello.html" class="navigation navigation-prev " aria-label="Previous page: Computer Science">
+                <a href="1 - C++ basics.html" class="navigation navigation-prev " aria-label="Previous page: C++ basics">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1 - C++ basics.html" class="navigation navigation-next " aria-label="Next page: C++ basics">
+                <a href="1 - Linux.html" class="navigation navigation-next " aria-label="Next page: Linux">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -573,7 +623,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Software Analysis and Design 1","level":"1.2.1","depth":2,"next":{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},"previous":{"title":"Computer Science","level":"1.2","depth":1,"path":"Computer Science/hello.md","ref":"Computer Science/hello.md","articles":[{"title":"Software Analysis and Design 1","level":"1.2.1","depth":2,"path":"Computer Science/Software Analysis and Design 1/hello.md","ref":"Computer Science/Software Analysis and Design 1/hello.md","articles":[{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},{"title":"Git","level":"1.2.1.2","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Git.md","ref":"Computer Science/Software Analysis and Design 1/1 - Git.md","articles":[]},{"title":"Linux","level":"1.2.1.3","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Linux.md","ref":"Computer Science/Software Analysis and Design 1/1 - Linux.md","articles":[]},{"title":"Arithmetics","level":"1.2.1.4","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","ref":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","articles":[]},{"title":"Data types","level":"1.2.1.5","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - data types.md","ref":"Computer Science/Software Analysis and Design 1/2 - data types.md","articles":[]},{"title":"Input/output","level":"1.2.1.6","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - input output.md","ref":"Computer Science/Software Analysis and Design 1/2 - input output.md","articles":[]},{"title":"Arrays","level":"1.2.1.7","depth":3,"path":"Computer Science/Software Analysis and Design 1/3 - arrays.md","ref":"Computer Science/Software Analysis and Design 1/3 - arrays.md","articles":[]},{"title":"Build systems","level":"1.2.1.8","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - build systems.md","ref":"Computer Science/Software Analysis and Design 1/4 - build systems.md","articles":[]},{"title":"Multiple files","level":"1.2.1.9","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","ref":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","articles":[]},{"title":"Input validation","level":"1.2.1.10","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","ref":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","articles":[]},{"title":"Random number generation","level":"1.2.1.11","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","ref":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","articles":[]},{"title":"Test driven development","level":"1.2.1.12","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","ref":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","articles":[]},{"title":"Pointers","level":"1.2.1.13","depth":3,"path":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","ref":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","articles":[]},{"title":"Dynamically allocated memory","level":"1.2.1.14","depth":3,"path":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","ref":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","articles":[]},{"title":"Classes","level":"1.2.1.15","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Classes.md","ref":"Computer Science/Software Analysis and Design 1/8 - Classes.md","articles":[]},{"title":"Enumerations","level":"1.2.1.16","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","ref":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","articles":[]},{"title":"Structs","level":"1.2.1.17","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Structs.md","ref":"Computer Science/Software Analysis and Design 1/8 - Structs.md","articles":[]},{"title":"Debugger","level":"1.2.1.18","depth":3,"path":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","ref":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","articles":[]},{"title":"Vectors","level":"1.2.1.19","depth":3,"path":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","ref":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","articles":[]},{"title":"Object oriented programming","level":"1.2.1.20","depth":3,"path":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","ref":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","articles":[]},{"title":"Template classes","level":"1.2.1.21","depth":3,"path":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","ref":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","articles":[]},{"title":"Operator overloading","level":"1.2.1.22","depth":3,"path":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","ref":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","articles":[]}]}]},"articles":[{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},{"title":"Git","level":"1.2.1.2","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Git.md","ref":"Computer Science/Software Analysis and Design 1/1 - Git.md","articles":[]},{"title":"Linux","level":"1.2.1.3","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Linux.md","ref":"Computer Science/Software Analysis and Design 1/1 - Linux.md","articles":[]},{"title":"Arithmetics","level":"1.2.1.4","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","ref":"Computer Science/Software Analysis and Design 1/2 - arithmetic.md","articles":[]},{"title":"Data types","level":"1.2.1.5","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - data types.md","ref":"Computer Science/Software Analysis and Design 1/2 - data types.md","articles":[]},{"title":"Input/output","level":"1.2.1.6","depth":3,"path":"Computer Science/Software Analysis and Design 1/2 - input output.md","ref":"Computer Science/Software Analysis and Design 1/2 - input output.md","articles":[]},{"title":"Arrays","level":"1.2.1.7","depth":3,"path":"Computer Science/Software Analysis and Design 1/3 - arrays.md","ref":"Computer Science/Software Analysis and Design 1/3 - arrays.md","articles":[]},{"title":"Build systems","level":"1.2.1.8","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - build systems.md","ref":"Computer Science/Software Analysis and Design 1/4 - build systems.md","articles":[]},{"title":"Multiple files","level":"1.2.1.9","depth":3,"path":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","ref":"Computer Science/Software Analysis and Design 1/4 - multiple files and functions.md","articles":[]},{"title":"Input validation","level":"1.2.1.10","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","ref":"Computer Science/Software Analysis and Design 1/5 - Input Validation.md","articles":[]},{"title":"Random number generation","level":"1.2.1.11","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","ref":"Computer Science/Software Analysis and Design 1/5 - Random Number Generator.md","articles":[]},{"title":"Test driven development","level":"1.2.1.12","depth":3,"path":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","ref":"Computer Science/Software Analysis and Design 1/5 - Test Driven Development.md","articles":[]},{"title":"Pointers","level":"1.2.1.13","depth":3,"path":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","ref":"Computer Science/Software Analysis and Design 1/6 - Pointers.md","articles":[]},{"title":"Dynamically allocated memory","level":"1.2.1.14","depth":3,"path":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","ref":"Computer Science/Software Analysis and Design 1/7 - Dynamically Allocated Memory.md","articles":[]},{"title":"Classes","level":"1.2.1.15","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Classes.md","ref":"Computer Science/Software Analysis and Design 1/8 - Classes.md","articles":[]},{"title":"Enumerations","level":"1.2.1.16","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","ref":"Computer Science/Software Analysis and Design 1/8 - Enumerations.md","articles":[]},{"title":"Structs","level":"1.2.1.17","depth":3,"path":"Computer Science/Software Analysis and Design 1/8 - Structs.md","ref":"Computer Science/Software Analysis and Design 1/8 - Structs.md","articles":[]},{"title":"Debugger","level":"1.2.1.18","depth":3,"path":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","ref":"Computer Science/Software Analysis and Design 1/9 - Debugger.md","articles":[]},{"title":"Vectors","level":"1.2.1.19","depth":3,"path":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","ref":"Computer Science/Software Analysis and Design 1/10 - Vectors.md","articles":[]},{"title":"Object oriented programming","level":"1.2.1.20","depth":3,"path":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","ref":"Computer Science/Software Analysis and Design 1/11 - Object Oriented Programming.md","articles":[]},{"title":"Template classes","level":"1.2.1.21","depth":3,"path":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","ref":"Computer Science/Software Analysis and Design 1/12 - Template Classes.md","articles":[]},{"title":"Operator overloading","level":"1.2.1.22","depth":3,"path":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","ref":"Computer Science/Software Analysis and Design 1/13 - Operator Overloading.md","articles":[]}],"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","toggle-chapters","livereload"],"pluginsConfig":{"katex":{},"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"hello.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Computer Science/Software Analysis and Design 1/hello.md","mtime":"2022-08-23T04:59:06.211Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-12-26T05:01:15.136Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.2.1.2","depth":3,"next":{"title":"Linux","level":"1.2.1.3","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - Linux.md","ref":"Computer Science/Software Analysis and Design 1/1 - Linux.md","articles":[]},"previous":{"title":"C++ basics","level":"1.2.1.1","depth":3,"path":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","ref":"Computer Science/Software Analysis and Design 1/1 - C++ basics.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","toggle-chapters","livereload"],"pluginsConfig":{"katex":{},"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"hello.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Computer Science/Software Analysis and Design 1/1 - Git.md","mtime":"2022-08-23T04:59:06.205Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-12-26T05:01:15.136Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

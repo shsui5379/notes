@@ -1,8 +1,0 @@
-- Pointers store a memory address
-- To declare a pointer, the data type would be `type*`
-  - `double*` would be the type for a pointer to a double variable in memory
-- To get the address of an existing variable, add `&` in front of the variable name
-- To resolve the value that a pointer is pointing to, add `*` in front of the pointer's name
-- Dangling pointers: if a pointer is currently not being used to point to data that you know is valid, make it point to `nullptr` instead
-- To access the members of a pointer to an object or struct, use `->` instead of `.`
-- An array's name is a pointer to the first element of the array
