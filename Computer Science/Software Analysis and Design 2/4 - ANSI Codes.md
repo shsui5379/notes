@@ -1,0 +1,3 @@
+- Special characters that tell a terminal to do something
+- Ex: changing font color, moving the cursor location, etc.
+- List: https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797

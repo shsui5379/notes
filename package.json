@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "honkit serve",
+    "serve": "honkit serve . docs",
+    "build": "honkit build . docs",
     "publish": "node_modules/.bin/gulp deploy"
   },
   "repository": {
