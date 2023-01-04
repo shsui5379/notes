@@ -30,6 +30,7 @@
     * [Data structures](Computer Science/Software Analysis and Design 2/3 - Data Structures.md)
     * [ANSI codes](Computer Science/Software Analysis and Design 2/4 - ANSI Codes.md)
     * [Linked lists](Computer Science/Software Analysis and Design 2/5 - Linked Lists.md)
+    * [Sorts](Computer Science/Software Analysis and Design 2/6 - Sorts.md)
 * [English](English/hello.md)
   * [Expository Writing](English/Expository Writing/hello.md)
     * [Writing tips](English/Expository Writing/1 - Writing Tips.md)
