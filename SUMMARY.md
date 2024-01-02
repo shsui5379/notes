@@ -31,6 +31,7 @@
     * [ANSI codes](Computer Science/Software Analysis and Design 2/4 - ANSI Codes.md)
     * [Linked lists](Computer Science/Software Analysis and Design 2/5 - Linked Lists.md)
     * [Sorts](Computer Science/Software Analysis and Design 2/6 - Sorts.md)
+    * [Analysis](Computer Science/Software Analysis and Design 2/7 - Analysis.md)
 * [English](English/hello.md)
   * [Expository Writing](English/Expository Writing/hello.md)
     * [Writing tips](English/Expository Writing/1 - Writing Tips.md)
